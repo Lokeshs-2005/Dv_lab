@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt 
+import pandas as pd 
+data =pd.read_csv(r"C:Users\11b51\Downloads\data.csv.txt")
+x_values = data ['Pregnancies']
+y_values = data['Glucose']
+plt.scatter(x_values, y_values, color = 'r', marker= 'o')
+pit.xlabel ('X-axis Label')
+plt.ylabel("Y-axis Label')
+plt.title('Scatter Plot Example')
+plt.show()
