@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+# Read data from the file
+with open('bar_plot_data.txt', 'r') as file: 
+lines = file.readlines()    
+categories = [line.split()[0] for line in lines]    
+values = [int(line.split()[1]) for line in lines]
+# Plot the bar graph
+plt.bar(categories, values, color='skyblue’)
+plt.xlabel('Categories’)
+plt.ylabel('Values’)
+plt.title('Bar Plot using Matplotlib’)
+plt.show()
