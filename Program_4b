@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+# Sample data 
+x_values = [2, 4, 6, 8, 10]
+y_values = [5, 7, 3, 8, 2]
+# Creating a scatter plot 
+plt.scatter(x_values, y_values, color='red', marker='o’)
+# Adding labels and title 
+plt.xlabel('X-axis’) 
+plt.ylabel('Y-axis’) 
+plt.title('Scatter Plot Example’) 
+# Display the plot 
+plt.show()
