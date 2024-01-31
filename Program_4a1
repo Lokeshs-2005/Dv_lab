@@ -1,0 +1,17 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+# Load CSV file into a DataFrame
+csv_file_path = 'your_file_path.csv’ 
+ # Replace with your CSV file path
+data = pd.read_csv(csv_file_path)
+# Assuming the CSV file has columns 'Category' and 'Value’
+categories = data['Category’]
+values = data['Value’]
+# Create a bar plot
+plt.bar(categories, values, color='blue’)
+# Add labels and title
+plt.xlabel('Categories’)
+plt.ylabel('Values’)
+plt.title('Bar Plot from CSV Data’)
+# Show the plot
+plt.show()
