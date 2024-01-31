@@ -1,0 +1,9 @@
+import random
+# Generate some sample data
+data = {'Category A': random.randint(1, 10),
+'Category B': random.randint(1, 10), 
+'Category C': random.randint(1, 10)}
+# Save data to a file
+with open('bar_plot_data.txt', 'w') as file:
+for category, value in data.items():
+file.write(f'{category} {value}\n')
